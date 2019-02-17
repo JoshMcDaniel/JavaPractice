@@ -4,10 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        FindMinArray minArray = new FindMinArray();
-        int arrayLength = 5;
-        int minInt = minArray.findMin(minArray.readIntegers(arrayLength));
-        System.out.println("The minimum integer is " + minInt);
+        int[] arr = new int[] {1,2,3,4,5};
+        ReverseArray reverseArray = new ReverseArray();
+        reverseArray.reverse(arr);
 
     }
 

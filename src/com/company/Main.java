@@ -4,11 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //  Instantiates the SortArray class
-        SortArray sort = new SortArray();
+        FindMinArray minArray = new FindMinArray();
         int arrayLength = 5;
-        int[] unsortedArray = sort.setUnsortedArray(arrayLength);
-        sort.sortArray(unsortedArray);
+        int minInt = minArray.findMin(minArray.readIntegers(arrayLength));
+        System.out.println("The minimum integer is " + minInt);
 
     }
 

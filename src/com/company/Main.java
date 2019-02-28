@@ -4,9 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] arr = new int[] {1,2,3,4,5};
-        ReverseArray reverseArray = new ReverseArray();
-        reverseArray.reverse(arr);
+        Theatre theatre = new Theatre("Northwoods Cinema", 8, 12);
+//        theatre.getSeats();
+        if (theatre.reserveSeat("H01")) {
+            System.out.println("Please pay");
+        } else {
+            System.out.println("Can't sit here...");
+        }
+
+        if (theatre.reserveSeat("H01")) {
+            System.out.println("Please pay");
+        } else {
+            System.out.println("Can't sit here...");
+        }
 
     }
 
